@@ -10,7 +10,7 @@ const typeDefs = gql`
     description: String
     title: String
     image: Int
-    link: [Reaction]
+    link: String
   }
 
   type User {
@@ -33,7 +33,7 @@ const typeDefs = gql`
       description: String!
       title: String!
       bookId: String!
-      iamge: String!
+      image: String!
       link: String!
     ): User
     removeBook(bookId: String!): User
